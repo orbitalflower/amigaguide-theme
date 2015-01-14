@@ -1,0 +1,26 @@
+name: "AmigaGuide"
+description: "If you're seeing this, someone forgot to edit the site description."
+url: "https://orbitalflower.github.io/amigaguide-theme/"
+
+baseurl: "https://orbitalflower.github.io/amigaguide-theme"
+
+cats:
+ - news
+ - technology
+
+relative_permalinks: false
+permalink: ":year:month:day-:title.html"
+
+markdown: kramdown
+kramdown:
+  hard_wrap: false
+  entity_output: "symbolic"
+  line_width: 68
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "post"
+    values:
+      layout: "post"
